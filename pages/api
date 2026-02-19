@@ -1,0 +1,9 @@
+export default async function handler(req, res) {
+  const { story } = req.body;
+
+  // هنا ستستخدم أي خدمة TTS (مثال: ElevenLabs)
+  // حاليا سنعيد رابط تجريبي
+  const audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+
+  res.status(200).json({ url: audioUrl });
+}
