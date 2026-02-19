@@ -14,19 +14,21 @@ export default function Home() {
   };
 
   return (
-    <div style={{
-      minHeight: "100vh",
-      background: "#111",
-      color: "white",
-      padding: "40px",
-      fontFamily: "sans-serif"
-    }}>
-      <h1 style={{fontSize: "32px"}}>Story AI Creator - صانع القصص</h1>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#111",
+        color: "white",
+        padding: "40px",
+        fontFamily: "sans-serif"
+      }}
+    >
+      <h1 style={{ fontSize: "32px" }}>Story AI Creator - صانع القصص</h1>
 
       <textarea
         placeholder="اكتب قصتك هنا..."
         value={story}
-        onChange={e => setStory(e.target.value)}
+        onChange={(e) => setStory(e.target.value)}
         style={{
           width: "100%",
           height: "150px",
@@ -35,7 +37,7 @@ export default function Home() {
         }}
       />
 
-      <select value={duration} onChange={e => setDuration(e.target.value)}>
+      <select value={duration} onChange={(e) => setDuration(e.target.value)}>
         <option value="5">5 دقائق</option>
         <option value="10">10 دقائق</option>
         <option value="30">30 دقيقة</option>
@@ -44,7 +46,7 @@ export default function Home() {
 
       <br /><br />
 
-      <select value={size} onChange={e => setSize(e.target.value)}>
+      <select value={size} onChange={(e) => setSize(e.target.value)}>
         <option value="1920x1080">يوتيوب 16:9</option>
         <option value="1080x1920">ريلز 9:16</option>
         <option value="1080x1080">مربع</option>
