@@ -12,7 +12,7 @@ export default function Home() {
     alert("تم إنشاء الفيديو بنجاح 🎬");
     setLoading(false);
   };
-
+  
   return (
     <div
       style={{
